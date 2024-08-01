@@ -21,6 +21,8 @@ function sidebarClicked (e){
   sidebarLi.forEach((li) => {
     li.addEventListener('click', function(){
         sidebar.style.display ='none';
+        closeMenu.style.display ='none';
+        hamburger.style.display ='initial';
     })
   })
   
