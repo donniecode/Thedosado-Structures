@@ -507,12 +507,15 @@ body {
   }
   .hero{
     background: url(images/hero-full.jpg) rgba(0, 0, 0, 0.4) no-repeat top 50px center / cover;
-    min-height: 580px;
+    min-height: 610px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     background-blend-mode: multiply;
+  }
+  .hero-text-group{
+    padding-top: 50px;
   }
   .main-navbar .sidebar{
     display: none;
@@ -531,8 +534,9 @@ body {
   }
   .sidebar li{
     text-align: center;
-    width: 100%;
-    padding-bottom: 2rem;
+    max-width: 100%;
+    padding: 0 2rem 2rem 2rem;
+    margin: 0 auto;
   }
   .btn-nav{
     background-color: transparent;
