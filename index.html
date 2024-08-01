@@ -1,362 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="eng">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thedosado welding and structural works">
-    <meta name="keywords" content="Thedosado, welding, structural works, welding works">
-    <meta name="author" content="Donald Zarura |@doniecode">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="donald zarura's online web development portfolio">
+  <meta name="author" content="Donald Zarura | @doniecode">
+  <meta name="keywords" content="portfolio, web development, web developer, web developer portfolio, frontend developer portfolio">
+	
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Thedosado Structures</title>
-</head>
-
+  <link rel="icon" type="image" href="/images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>doniecode's portfolio</title>
+	</head>
 <body>
-
-    <!-- header -->
-    <header class="main-header">
-        <div class="container">
-            <div class="flex flex-header">
-                <p class="logo">Thedosado</p>
-                <nav class="main-navbar" role="primary">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact" class="btn btn-nav">Contact</a></li>
-                    </ul>
-                </nav>
-                <button class="mobile-btns">
-                    <img src="images/hamburger.svg" alt="" class="hamburger">
-                    <img src="images/menu-close.svg" alt="" class="close-menu">
-                </button>
-            </div>
+  
+  <div class="bg1"></div>
+  <header class="main-header">
+    <div class="container">
+      <div class="nav-wrapper">
+      <p class="logo">doniecode.</p>
+    <nav class="navbar">
+      <ul class="main-menu">
+        <li><a href="#section-about-css">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#section-projects">Projects</a></li>
+        <li><a href="#section-contact-css">Contact</a></li>
+      </ul>
+      
+      <!--sidebar-->
+      <ul class="sidebar">
+        <li><a href="#section-about-css">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#section-projects">Projects</a></li>
+        <li><a href="#section-contact-css">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="menu-btns">
+      <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+      <svg class="close-menu" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+ </button>
+  </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+        <h1 class="heading-1">
+           Hi, I'm <span>Donald Zarura</span>
+          <span class="job">
+            Front-end Web Developer.
+            </span>
+        </h1>
         </div>
-    </header>
-    <!-- hero section -->
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="flex">
-                    <div class="text-group hero-text-group">
-                        <h1 class="heading-1">
-                            Thedosado <span>structural works</span>
-                        </h1>
-                        <p class="text hero-text">
-                            Get high quality structures whenever you need, our structural services are trusted
-                            throughout
-                            South Africa.
-                        </p>
-                        <a href="#contact" class="btn btn-hero">
-                            Get a free quote <i class="fas fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- about section -->
-        <section class="about" id="about">
-            <div class="container">
-                <div class="flex flex-about">
-                    <img src="images/pic1.jpg" alt="image" class="about-img">
-                    <div class="about-text-group">
-                        <h2 class="heading-2 section-title">
-                            About Us
-                        </h2>
-                        <p class="text about-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem illo quibusdam explicabo
-                            veniam
-                            iure, ut numquam necessitatibus nemo omnis! Perspiciatis reiciendis repudiandae excepturi
-                            culpa
-                            quibusdam minima odit magni corrupti aliquam?
-                        </p>
-                        <p class="text about-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem illo quibusdam explicabo
-                            veniam
-                            iure, ut numquam necessitatibus nemo omnis! Perspiciatis reiciendis repudiandae excepturi
-                            culpa
-                            quibusdam minima odit magni corrupti aliquam?
-                        </p>
-                        <p class="text about-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem illo quibusdam explicabo
-                            veniam
-                            iure, ut numquam necessitatibus nemo omnis! Perspiciatis reiciendis.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- services section -->
-        <section class="services" id="services">
-            <div class="container">
-                <h2 class="section-title">
-                    What We Offer
-                </h2>
-                <div class="cards cards-services">
-                    <div class="card">
-                        <img src="images/pic3.jpg" alt="im,age" class="card-img">
-                        <div class="card-text-group">
-                            <h3 class="card-name">
-                                Welding
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, sequi?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/pic3.jpg" alt="im,age" class="card-img">
-                        <div class="card-text-group">
-                            <h3 class="card-name">
-                                Aluminium
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, sequi?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/pic3.jpg" alt="im,age" class="card-img">
-                        <div class="card-text-group">
-                            <h3 class="card-name">
-                                Repairs
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, sequi?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/pic3.jpg" alt="im,age" class="card-img">
-                        <div class="card-text-group">
-                            <h3 class="card-name">
-                                Building
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, sequi?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- testimonials section -->
-        <section class="testimonials">
-            <div class="container">
-                <h2 class="section-title">
-                    What Our Clients Say
-                </h2>
-                <p class="text">
-                    Our clients from past are all saying the same thing.
-                </p>
-                <!-- testimonial cards -->
-                <div class="testimonial-cards">
-                    <div class="card-group card-group-1 show">
-                        <div class="test-card">
-                            <img src="images/avatar-ali.png" alt="image">
-                            <span>
-                                <h4 class="person-name">
-                                    Ali
-                                </h4>
-                                <p class="job">
-                                    Manager at ABC company
-                                </p>
-                            </span>
-                            <p class="test-card-text">
-                                The people from Thedosado know their job very well, they are fast and affordable. Trust
-                                me,
-                                they are the best. I recommend them!
-                            </p>
-                        </div>
-                        <div class="test-card">
-                            <img src="images/avatar-shanai.png" alt="image">
-                            <span>
-                                <h4 class="person-name">
-                                    Shanai
-                                </h4>
-                                <p class="job">
-                                    Web developer
-                                </p>
-                            </span>
-                            <p class="test-card-text">
-                                The people from Thedosado know their job very well, they are fast and affordable. Trust
-                                me,
-                                they are the best. I recommend them!
-                            </p>
-                        </div>
-                    </div>
+          <div class="hero-btns">
+          <a href="#section-contact-css" class="btn btn1">Hire Me</a>
+          <a href="#section-projects" class="btn btn2">View work</a>
+          </div>
+     </div>
+     </div>
+    </section>
+  
+  <section class="about-section">
+    <div class="container">
+      <div class="grid grid-about">
+      <div>
+        <img src="images/donald.jpg" alt="" class="about-img">
+      </div>
+      <div class="about-text-wrap">
+    <h2 class="heading-2 heading-about" id="section-about-css">
+      About Me
+    </h2>
+    <p class="text">
+      Welcome to my digital Portfolio, I'm <span class="bold-text">Donald Zarura.</span> a front-end web developer who is self-taught, based in South Africa, Pretoria. I am really excited to share my projects with you here. I still learn everyday so i can improve my touch.
+    </p>
+    <p class="text">
+      "I am always open to new opportunities, collaborations and conversations. If you have a project in mind please feel free to reach out, <span class="bold-text">Let's create something extraordinary together!</span>
+    </p>
+    <p class="text">when i'm not coding, i am either watching tutorials, reading docs, playing video games, or i'm working with dad.
+    </p>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+  <section class="skills-section"  id="skills">
+    <div class="container">
+   <h2 class="heading-2 heading-skills">Skills</h2>
+   <p>I understand these languages!</p>
+     <ul class="skills">
+       <li>
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML</h3>
+        </li>
+       <li>
+        <i class="fa-brands fa-css3"></i>
+        <h3>CSS</h3>
+        </li>
+       <li>
+        <i class="fa-brands fa-js"></i>
+        <h3>Javascript</h3>
+        </li>
+        <li>
+          <i class="fa-brands fa-bootstrap"></i>
+          <h3>Bootstrap</h3>
+          </li>
+      </ul>
+    </div>
+  </section>
 
-                    <div class="card-group card-group-2">
-                        <div class="test-card">
-                            <img src="images/avatar-richard.png" alt="image">
-                            <span>
-                                <h4 class="person-name">
-                                    Richard
-                                </h4>
-                                <p class="job">
-                                    Web developer
-                                </p>
-                            </span>
-                            <p class="test-card-text">
-                                The people from Thedosado know their job very well, they are fast and affordable. Trust
-                                me,
-                                they are the best. I recommend them!
-                            </p>
-                        </div>
-                        <div class="test-card">
-                            <img src="images/avatar-anisha.png" alt="image">
-                            <span>
-                                <h4 class="person-name">
-                                    Anisha
-                                </h4>
-                                <p class="job">
-                                    Web developer
-                                </p>
-                            </span>
-                            <p class="test-card-text">
-                                The people from Thedosado know their job very well, they are fast and affordable. Trust
-                                me,
-                                they are the best. I recommend them!
-                            </p>
-                        </div>
-                    </div>
-                    <!-- controls -->
-                    <!-- <button type="button" class="btn-previous">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button type="button" class="btn-next">
-                        <i class="fas fa-chevron-right"></i>
-                    </button> -->
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact section -->
-        <section class="get-in-touch" id="contact">
-            <div class="container">
-                <h2 class="section-title">
-                    Get In Touch With Us
-                </h2>
-                <p class="text">
-                    If you got a project in mind, feel free to reach out. send us a message here or visit us at this
-                    location.
-                </p>
-                <div class="contact-group">
-                    <div class="form-wrapper">
-                        <form action="https://formsubmit.co/be43c93e04d572b6fd38b50ba11e80d8" method="POST" class="form"
-                            target="_blank">
-                            <input type="hidden" name="_subject" value="Message From Thedosado Structures!">
-                            <input type="hidden" name="_captcha" value="false">
-                            <div class="form-group">
-                                <i class="fas fa-user"></i>
-                                <input type="text" id="name-input" placeholder="Full Name"
-                                    aria-label="enter your full name" name="Full Name" required>
-                            </div>
-                            <div class="form-group">
-                                <i class="fas fa-envelope"></i>
-                                <input type="email" id="email-input" placeholder="Email"
-                                    aria-label="enter your email address" name="Email Address" required>
-                            </div>
-                            <div class="form-group phone-group">
-                                <i class="fas fa-phone"></i>
-                                <input type="number" id="phone-input" placeholder="Phone"
-                                    aria-label="enter your phone number" name="Phone Number" required>
-                            </div>
-                            <div class="form-group msg-group">
-                                <i class="fas fa-message"></i>
-                                <textarea id="textarea" placeholder="Your message" aria-label="write your message"
-                                    name="Message" required></textarea>
-                            </div>
-                            <button type="submit" id="submit-btn">Submit</button>
-                        </form>
-                    </div>
-                    <!-- google map -->
-                    <div class="map-wrapper">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6047.815752537097!2d28.101584369766968!3d-25.66954566009775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1722380325036!5m2!1sen!2sza"
-                            width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                        <div class="directions">
-                            <h5> <i class="fa-solid fa-location-dot"></i> Cnr Brits Road & Doreen Avenue</h5>
-                            <h5>Karenpark</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- social links section -->
-        <section class="social-links-section">
-            <div class="container">
-                <ul class="social-links">
-                    <h4>Follow Thedosado Socials:</h4>
-                    <li>
-                        <a href="mailto:petros@thedosado.com" target="_blank">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://wa.link/s38bsf" target="_blank">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </li>
-                    <li class="whatsapp-2">
-                        <span>2</span>
-                        <a href="https://wa.link/f7g1ay" target="_blank">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://https://www.facebook.com/Thedosado-trading-and-projects-pty-ltd/100076609759885/" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.github.com/doniecode/" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Back To Top Button -->
-        <a href="#" class="back-to-top">
-            Back to top
-        </a>
-    </main>
-
-    <!--Footer-->
-    <footer class="footer">
-        <div class="container">
-            
-            <div class="attribution">
-                <p class="copyright-msg">
-                    Thedosado Structures &copy 2024
-                </p>
-                <p class="creator">
-                    Website created by <a href="https://www.instagram.com/doniecode/">@doniecode.</a>
-                </p>
-            </div>
-            
+<section class="portfolio" id="section-projects" aria-role="projects">
+  <div class="container">
+    <div class="portfolio-content">
+      <h2 class="heading-2 heading-portfolio">
+        Projects
+      </h2>
+      <p class="projects-desc">
+        here are some of the works i did!
+      </p>
+      <div class="portfolio-cards">
+        <div class="card">
+          <img src="images/mandy's.png" alt="">
+          <h3 class="card-name">
+            Mandy's Home Repair Landing page
+          </h3>
+          <a href="https://doniecode.github.io/Mandy-s-Home-Repair/" class="link-preview" target="_blank">
+            Live Preview
+          </a>
+          <a href="https://github.com/doniecode/Mandy-s-Home-Repair.git" class="link-code" target="_blank">view code</a>
         </div>
-    </footer>
+        <div class="card">
+          <img src="images/insure.png" alt="">
+          <h3 class="card-name">
+            Insure Landing Page
+          </h3>
+          <a href="https://doniecode.github.io/Insure-Landing-Page/#" class="link-preview" target="_blank">
+            Live Preview
+          </a>
+          <a href="https://github.com/doniecode/Insure-Landing-Page.git" class="link-code" target="_blank">view code</a>
+        </div>
+        <div class="card">
+          <img src="images/loopstudios.png" alt="">
+          <h3 class="card-name">
+            Loopstudios Landing Page
+          </h3>
+          <a href="https://doniecode.github.io/loopstudios-/#support" class="link-preview" target="_blank">
+            Live Preview
+          </a>
+          <a href="https://github.com/doniecode/loopstudios-.git" class="link-code" target="_blank">view code</a>
+        </div>
+        <div class="card">
+          <img src="images/testimonials.png" alt="">
+          <h3 class="card-name">
+            Pricing Component With Toggle Button
+          </h3>
+          <a href="https://doniecode.github.io/Pricing-Component-with-Toggle/" class="link-preview" target="_blank">
+            Live Preview
+          </a>
+          <a href="https://github.com/doniecode/Pricing-Component-with-Toggle.git" class="link-code" target="_blank">view code</a>
+        </div>
+        <div class="card">
+          <img src="images/accordion.png" alt="image">
+          <h3 class="card-name">
+            FAQ Accordion
+          </h3>
+          <a href="https://doniecode.github.io/faq-accordion/" class="link-preview" target="_blank">
+            Live Preview
+          </a>
+          <a href="https://github.com/doniecode/faq-accordion.git" class="link-code">view code</a>
+        </div>
+      </div>
+      <a href="https://github.com/doniecode?tab=repositories" class="more-projects" target="_blank">View all Projects</a>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<section class="contact-section" aria-label="contact">
+  <div class="form-wrapper">
+    <h2 class="form-title" id="section-contact-css">
+      Contact Me
+    </h2>
+    <p>Send me a message here!</p>
+    <form action="https://formsubmit.co/be43c93e04d572b6fd38b50ba11e80d8" method="POST" class="form">
+      <div class="form-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="name-input" placeholder="Full Name"  aria-label="enter your full name" name="Full Name" required>
+      </div>
+      <div class="form-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email-input" placeholder="Email"  aria-label="enter your email address" name="Email Address" required>
+      </div>
+      <div class="form-group msg-group">
+        <i class="fas fa-message"></i>
+        <textarea id="textarea" placeholder="Your message"  aria-label="write your message" name="Message" required></textarea>
+      </div>
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+<a href="#" class="back-to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+</main>
+
+<!--Footer-->
+<footer class="footer">
+  <div class="container">
+  <ul class="footer-links">
+    <li>
+      <a href="mailto:doniecode@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  <li>
+      <a href="https://www.linkedin.com/in/donald-zarura-3031032a8" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/doniecode/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.github.com/doniecode/" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.link/f7g1ay" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </li>
+  </ul>
+  <div>
+    <p class="copyright-msg">
+      doniecode &copy 2024
+    </p>
+  </div>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
