@@ -500,9 +500,19 @@ body {
   }
   .main-header{
     position: fixed;
+    top: 0;
     z-index: 999;
     width: 100%;
     padding: 0.8rem 0;
+  }
+  .hero{
+    background: url(images/hero-full.jpg) rgba(0, 0, 0, 0.4) no-repeat top 50px center / cover;
+    min-height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-blend-mode: multiply;
   }
   .main-navbar .sidebar{
     display: none;
