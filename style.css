@@ -438,6 +438,18 @@ body {
   font-size: 2rem;
   color: hsl(250, 50%, 10%);
 }
+.social-links .whatsapp-2{
+  position: relative;
+}
+.social-links .whatsapp-2 span{
+  position: absolute;
+  right: 0;
+  top: -12px;
+  background-color: hsl(210, 100%, 50%);
+  color: #fff;
+  padding: 0.1rem;
+  border-radius: 50%;
+}
 
 /* back to top button */
 .back-to-top{
@@ -445,7 +457,7 @@ body {
   color: #fff;
   padding: 0.8rem;
   position: fixed;
-  right: 1rem;
+  right: 1.5rem;
   bottom: 3rem;
   opacity: 0;
   transition: all .4s;
@@ -455,20 +467,15 @@ body {
 }
 
 .footer{
- z-index: -1;
+  z-index: -1;
   background-color: hsl(250, 50%, 10%);
-  min-height: 150px;
+  min-height: 200px;
   position: relative;
 }
 .attribution{
   color: #fff;
   position: absolute;
   bottom: 10px;
-  display: flex;
-  width: 100%;
-}
-.attribution .creator{
-  margin-left: 150px;
 }
 
 /* Mobile Responsiveness */
@@ -526,6 +533,9 @@ body {
 
   /* Services Section */
   .services{
+    text-align: center;
+  }
+  .services .section-title{
     text-align: center;
   }
 
@@ -600,7 +610,6 @@ body {
     box-shadow: 5px 5px 10px -8px,
     -5px -5px 10px -8px;
     max-width: 700px;
-    margin: 0 auto;
   }
   .social-links{
     display: flex;
