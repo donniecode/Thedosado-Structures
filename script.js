@@ -1,22 +1,20 @@
-//mobile sidebar
-const menubtns = document.querySelector(".menu-btns");
-const hamburger = document.querySelector(".hamburger");
-const closemenu = document.querySelector(".close-menu");
-const sidebar = document.querySelector(".sidebar");
+/* mobile sidebar toggler */
+const sidebar = document.querySelector('.sidebar');
+const hamburger = document.querySelector('.hamburger');
+const closeMenu = document.querySelector('.close-menu');
 
-hamburger.addEventListener("click", function(){
-  sidebar.style.display="flex";
-  hamburger.style.display="none";
-  closemenu.style.display="block";
+hamburger.addEventListener('click', function(){
+  sidebar.style.display = 'flex';
+  closeMenu.style.display = 'block';
+  hamburger.style.display = 'none';
+})
+closeMenu.addEventListener('click', function(){
+  sidebar.style.display = 'none';
+  closeMenu.style.display = 'none';
+  hamburger.style.display = 'initial';
 })
 
-closemenu.addEventListener("click", function(){
-  sidebar.style.display="none";
-  hamburger.style.display="block";
-  closemenu.style.display="none";
-})
-
-// back to top button
+/* back to top button */
 const toTop = document.querySelector('.back-to-top');
 
 window.addEventListener('scroll', function(){
