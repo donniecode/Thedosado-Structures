@@ -38,3 +38,35 @@ window.addEventListener('scroll', function(){
     toTop.classList.remove('active');
   }
 })
+
+/* Testimonials slider */
+const cardGroups = document.querySelectorAll('.card-group');
+const btnPrev = document.querySelector('.btn-previous');
+const btnNext = document.querySelector('.btn-next');
+const n = 0;
+
+function resetCards(){
+  for(let i = 0; i < cardGroups.length; i++){
+    cardGroups[i].style.display ='none';
+    cardGroups[n].style.display ='flex';
+  }
+}
+resetCards();
+
+btnPrev.addEventListener('click', ()=>{
+  if(n>0){
+    n--;
+  } else{
+    n = cardGroups.length-1;
+  }
+  resetCards();
+})
+
+btnNext.addEventListener('click', ()=>{
+  if(n<0){
+    n++;
+  } else{
+    n = 0;
+  }
+  resetCards();
+})

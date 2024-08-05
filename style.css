@@ -91,7 +91,7 @@ body {
 
   /* main header */
   .main-header{
-    background: linear-gradient(90deg, #222, hsl(250, 20%, 10%));
+   background: #222;
     padding: 1rem 0;
     color: #fff;
   }
@@ -237,6 +237,7 @@ body {
     -6px 0 20px -10px;
     border-radius: 0.3rem;
     margin: 0 auto;
+    height: 100%;
   }
   .card-img{
     width: auto;
@@ -247,8 +248,23 @@ body {
     padding: 0.8rem;
     text-align: center;
   }
+  .card-text{
+    margin-bottom: 0.8rem;
+  }
   .card-name{
     margin-bottom: 0.5rem;
+  }
+  .btn-card{
+    display: inline-block;
+    cursor: pointer;
+    color: hsl(250, 100%, 50%);
+    text-decoration: underline 0.090rem;
+    text-underline-offset: 0.1rem;
+    transition: all 0.5s;
+    padding: 0.2rem 1rem;
+  }
+  .btn-card:hover .fa-chevron-right{
+    transform: translateX(8px);
   }
 
   /* testimonials section */
@@ -272,9 +288,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-.card-group-2{
+/* .card-group-2{
   display: none;
-}
+} */
 .test-card{
   position: relative;
   padding: 2rem 1rem;
@@ -313,8 +329,7 @@ body {
   position: absolute;
   bottom: 0;
   top: 0;
-  display: block;
-  cursor: pointer;
+  border-radius: 50%;
 }
 .btn-previous{
   left: -40px;
