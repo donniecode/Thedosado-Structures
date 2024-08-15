@@ -43,30 +43,45 @@ window.addEventListener('scroll', function(){
 const cardGroups = document.querySelectorAll('.card-group');
 const btnPrev = document.querySelector('.btn-previous');
 const btnNext = document.querySelector('.btn-next');
-const n = 0;
+let n = 0;
 
 function resetCards(){
   for(let i = 0; i < cardGroups.length; i++){
-    cardGroups[i].style.display ='none';
-    cardGroups[n].style.display ='flex';
+    cardGroups[i].style.display='none';
+    
   }
+  cardGroups[n].style.display='grid';
 }
 resetCards();
 
-btnPrev.addEventListener('click', ()=>{
+btnPrev.addEventListener('click', (e)=>{
   if(n>0){
     n--;
   } else{
     n = cardGroups.length-1;
   }
   resetCards();
+  changePoints();
 })
 
-btnNext.addEventListener('click', ()=>{
-  if(n<0){
+btnNext.addEventListener('click', (e)=>{
+  if(n < cardGroups.length -1){
     n++;
   } else{
     n = 0;
   }
   resetCards();
+  changePoints();
 })
+
+/* navigation points */
+const points = document.querySelectorAll('.point');
+
+function changePoints(){
+  for(let p = 0; p < points.length; p++){
+    points[p].classList.remove('active-point');
+  }
+  points[n].classList.add('active-point');
+}
+changePoints();
+
