@@ -75,9 +75,7 @@ p{
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
-    font-size: 1rem;
-
-    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;font-family: "Work Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
@@ -480,10 +478,12 @@ iframe{
 
 /* Social Links Section */
 .social-links-section{
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 999;
   background-color: #fff;
   padding: 20px 0;
-  z-index: 2+;
-  transform: translateY(20px);
   box-shadow: 5px 5px 10px -8px,
   -5px -5px 10px -8px;
   max-width: 700px;
@@ -527,15 +527,15 @@ iframe{
   bottom: 3rem;
   opacity: 0;
   transition: all .4s;
+  z-index: 999;
 }
 .back-to-top.active{
   opacity: 1;
 }
 
 .footer{
-  z-index: -1;
   background-color: hsl(250, 50%, 10%);
-  min-height: 200px;
+  min-height: 280px;
   position: relative;
 }
 .attribution{
@@ -543,6 +543,10 @@ iframe{
   position: absolute;
   bottom: 10px;
   z-index: 999;
+}
+.attribution a{
+  text-decoration: underline 0.075rem;
+  text-underline-offset: 0.3rem;
 }
 .main-navbar .sidebar{
   display: none;
@@ -586,6 +590,9 @@ iframe{
   .hero-text-group{
     padding-top: 50px;
   }
+  .btn-hero{
+    margin-bottom: 1rem;
+  }
   .main-navbar .sidebar{
     display: none;
     flex-direction: column;
@@ -623,7 +630,7 @@ iframe{
     text-align: center;
   }
   .about-img{
-    width: 70%;
+    width: 80%;
     border-radius: 0.5rem;
   }
   .about-text-group{
@@ -749,13 +756,16 @@ iframe{
   
   /* Social Links Section */
   .social-links-section{
-    background-color: #fff;
-    padding: 20px 0;
-    z-index: 2;
-    transform: translateY(50px);
-    box-shadow: 5px 5px 10px -8px,
-    -5px -5px 10px -8px;
-    max-width: 700px;
+    position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 5px 5px 10px -8px,
+  -5px -5px 10px -8px;
+  max-width: 700px;
+  margin: 0 auto;
   }
   .social-links{
     display: flex;
