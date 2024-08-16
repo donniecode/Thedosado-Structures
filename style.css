@@ -169,11 +169,17 @@ body {
   .hero-text{
     margin: 1.2rem 0;
     max-width: 400px;
+    font-weight: 400;
   }
-  
   .btn-hero{
     font-weight: 500;
     padding: 0.6rem 1rem;
+    margin-right: 1.2rem;
+  }
+  .btn-whatsapp{
+    background-color: transparent;
+    border: 1px solid hsl(230, 100%, 50%);
+
   }
   .btn-hero:hover .fa-chevron-right{
     transform: translateX(0.2rem);
@@ -277,7 +283,6 @@ body {
   }
 .testimonial-cards{
   margin-top: 6rem;
-  position: relative;
   display: flex !important;
   flex-direction: column;
   justify-content: center;
@@ -300,10 +305,11 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 .test-card img{
-  position: absolute;
+  margin-bottom: -80px;
+  transform: translateY(-80px);
   top: -50px;
   width: 80px;
   border-radius: 100%;
@@ -617,7 +623,7 @@ iframe{
     text-align: center;
   }
   .about-img{
-    width: 50%;
+    width: 70%;
     border-radius: 0.5rem;
   }
   .about-text-group{
@@ -703,8 +709,8 @@ iframe{
     margin: 0 auto;
   }
   .form-wrapper{
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 600px;
   }
   .form{
     padding: 20px;
